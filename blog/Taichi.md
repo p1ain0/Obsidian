@@ -384,7 +384,7 @@ before we go: packed mode
 - Decides whether to pad the data to the power of two
   - Default choice:packed=False. will do the padding
   - We assume packed=True in this class for simplicity
-
+  
 ```
 ti.init() # default: packed=False
 a = ti.field(ti.i32, shape=(18,65))) #padded to (32, 128)
@@ -392,7 +392,6 @@ a = ti.field(ti.i32, shape=(18,65))) #padded to (32, 128)
 ti.init(packed=True)
 a = ti.field(ti.i32, shape=(18,65))) # no padding
 ```
-- Store our data in a memory-access-friendly way.
 
 Taichi: optimized for data-access
 
@@ -418,31 +417,5 @@ ti.root.dense(ti.i, 16).place(x)
 
 Each cell of root has a dense container with 16 cells along the ti.i axis. Each cell of a dense container has field x
 
-稀疏数据
-
-```
-ti.root.pointer(ti.i, 3) represent sparse cells
-is_active 
-bitmasked() represent sparse cells
-activate()/deactivate()
-deactivate_all()
-```
-
-## 调优
-
-### 调试
-
-init(debug = True)
 
 
-### 优化
-
-```
-ti.init(kernel_profiler=True, arch=ti.cuda)
-
-# clear profiling info
-ti.clear_kernel_profile_info()
-
-# Output your profiling info
-ti.print_kernel_profile_info("count")
-```
