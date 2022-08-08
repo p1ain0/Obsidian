@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "4e215e5ae8b2cab9",
+    "type": "split",
+    "children": [
+      {
+        "id": "efd99ec5f41b9f09",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "C++.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "55755c820ce89333",
+    "type": "split",
+    "children": [
+      {
+        "id": "a363548ba2cb4ff0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9df12b8cf0d75b5b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9a9ae362706fcfb7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "57e6deb09817616d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 183.5
+  },
+  "right": {
+    "id": "6d943f6c82e0672b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e82be5064842f635",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa92df55a80af3ce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "C++.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6c9a5bae0ca46f3d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "C++.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "957df9453ad08790",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e625dbe5ea6a4b13",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "C++.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 100,
+    "collapsed": true
+  },
+  "active": "efd99ec5f41b9f09",
+  "lastOpenFiles": [
+    "日志/问题记录.md",
+    "日志/7.28.md",
+    "emacs配置.md",
+    "样本比较丰富.md",
+    "日志/独特性统计.md",
+    "工具使用/docker.md",
+    "工具使用/shell.md",
+    "工具使用/vboxmanage.md",
+    "工具使用/firewall-cmd.md",
+    "日志/7.15.md"
+  ]
+}
