@@ -178,3 +178,53 @@ XCls<string, Vec> cl;
 
 12. Type Alias, noexcept, override, final
 
+```c++
+//type alias 
+//typedef void (*func)(int, int)
+using func = void(*)(int,int);
+void example(int,int){}
+func fn = example;
+
+//alias template
+template<class CharT>
+using mystring = std::basic_string<CharT, std::char_traits<CharT>>;
+mystring<char> str;
+```
+
+```c++
+//using 的三种种使用方式
+//1.using-directives for namespaces and using-declarations for namespace memners
+using namespace std;
+using std::count;
+//2.using-declarations for class members
+
+protected:
+  using _Base::_M_allocate;
+
+//3.type alias and alias template declaration(since c++11)
+using func = void(*)(int,int);
+template<typename T>
+struct Container {
+	using value_type = T;
+};
+template <class CharT> using mystring = std::basic_string<CharT, std::char_traits<CharT>>;
+```
+
+```c++
+noexcept
+void foo() noexcept; -> void foo() noexcept(true);
+
+void swap(Type &x, Type &y) noexcept(noexcept(x.swap(y)))
+{
+	x.swap(y)
+}
+```
+
+13. decltype
+
+让编译器找到表达式的类型，
+```c++
+map<sting, float> coll;
+decltype(coll)::value_type elem; ---> map<sting, float>::value_type elem;
+
+```
