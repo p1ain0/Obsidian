@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "日志/问题记录.md",
+            "file": "C++.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日志/问题记录.md",
+                "file": "C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日志/问题记录.md",
+                "file": "C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日志/问题记录.md"
+                "file": "C++.md"
               }
             }
           }
@@ -131,6 +131,7 @@
   },
   "active": "efd99ec5f41b9f09",
   "lastOpenFiles": [
+    "日志/问题记录.md",
     "日志/独特性统计.md",
     "日志/7.28.md",
     "日志/7.15.md",
@@ -139,7 +140,6 @@
     "工具使用/shell.md",
     "工具使用/vboxmanage.md",
     "1.vector.md",
-    "2022-07-30.md",
-    "日志/问题记录.md"
+    "2022-07-30.md"
   ]
 }

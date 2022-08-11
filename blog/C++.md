@@ -226,5 +226,38 @@ void swap(Type &x, Type &y) noexcept(noexcept(x.swap(y)))
 ```c++
 map<sting, float> coll;
 decltype(coll)::value_type elem; ---> map<sting, float>::value_type elem;
+//声明返回类型
+auto add(T1 x,T2 y) -> decltype(x+y);
+//元编程
+template <typename T>
+void test18_decktype(T obj)
+{
+	typedef typename T::iterator iType;
+	decltype(obj) anotherObj(Obj);
+
+}
+
+//匿名函数传类型
+auto cmp = [](const Person& p1, const Person& p2){
+	return p1.lastname() < p2.lastname()
+}
+std::set<Person, decltype(cmp)> coll<cmp>
 
 ```
+
+14. lambdas
+
+c++11 引入lambdas,允许内联函数的定义，可以被当成参数和局部变量。
+```c++
+[]{
+ std::cout << "" << std::endl;
+}()
+
+auto l = []{
+ std::cout << "" << std::endl;
+};
+l();
+
+[...外部变量](...参数)mutable throwSpec ->retType
+```
+
