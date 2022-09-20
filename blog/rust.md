@@ -1,122 +1,122 @@
 # Rust
 
-## rustѧϰ����
+## rust学习建议
 
-### �����������Ҫ���뵽ϸ����ȥ
+### 从整体出发不要陷入到细节中去
 
-rust��������
-�����ѧ
-������̬���
+rust语言特性
+设计哲学
+社区生态如何
 
-### ����һ����ѧ�����ͷ���ֲ�εݽ�ʽѧϰ
+### 抛弃一次性学会的念头，分层次递进式学习
 
-### ����֪��֪ʶ������ϵ
+### 和已知的知识建立联系
 
-### ѧ���Ķ�Դ���Դ��ѧϰ
+### 学会阅读源码从源码学习
 
-### ͨ������ʽ�Ķ��֪ʶ�հ�
+### 通过主题式阅读填补知识空白
 
-### ʱ�̰��������ѧ
+### 时刻把握设计哲学
 
-### ����ʶ�Ľ���rust������ģ��
+### 有意识的建立rust的心智模型
 
-### ����������ʶཻ��
+### 多分享多提问多交流
 
-### Ϊ��Դ��Ŀ�����׶����Լ�
+### 为开源项目做贡献锻炼自己
 
-### �Ķ�
+### 阅读
 
-## Rust���Ը���
+## Rust语言概览
 
-### �����ѧ
+### 设计哲学
 
-�ڴ氲ȫΪ��һ׼��
-ע�ز�����ȫ���������ݾ���
-������������
-�������Եĸ߶�һ����
-���Ա����пɼ���ʵ����
-ע�ؿ��������ѧϰ����
-�ִ�����������
-ӵ����Դ����
+内存安全为第一准则
+注重并发安全，避免数据竞争
+持续提升性能
+保持语言的高度一致性
+语言必须有可见的实用性
+注重开发体验和学习体验
+现代化语言特性
+拥抱开源社区
 
-### rust����ʱ����c����
+### rust是新时代的c语言
 
-#### Rust������һ��ͨ��������
+#### Rust语言是一门通用型语言
 
-#### Rust���Ե��ڴ氲ȫ������Ե���C���ԵĲ���
+#### Rust语言的内存安全方案针对的是C语言的不足
 
-��ֹ�Կ�ָ�������ָ����н�����
-��ȡδ��ʼ�����ڴ�
-���������
-�Ƿ��ͷ��Ѿ��ͷŻ�Ϊ�����ָ��
+禁止对空指针和悬垂指针进行解引用
+读取未初始化的内存
+缓冲区溢出
+非法释放已经释放或为分配的指针
 
-#### ��ȫ���޷칵ͨC����
+#### 安全且无缝沟通C语言
 
-ͨ��C-ABI��ɱ���C���Դ򽻵�
-������Safe Rust��Unsafe Rust
+通过C-ABI零成本和C语言打交道
+划分了Safe Rust和Unsafe Rust
 
-#### Rust�Ǿ��л�Ϸ�ʽ�ġ�������̡�ʽ�ı������
+#### Rust是具有混合范式的“面向过程”式的编程语言
 
-Rust�������������OOP��������ʽ��FP���ͷ������ֱ�̷�ʽ
-OOP��FP��ʽ��Rust��������Ϊ�������Զ����ڣ������ǳ���ʽ��
-Rust����רע�ڽ�����Ȿ���������ܱ�̷�ʽ˼���ܵĸ���
+Rust包含了面向对象（OOP）、函数式（FP）和泛型三种编程范式
+OOP和FP范式在Rust语言中作为语言特性而存在，并非是抽象方式。
+Rust让你专注于解决问题本身，而不受编程范式思想框架的干扰
 
-#### ��C�������ƣ�������ʱ��ʹ��
+#### 和C语言类似，担负了时代使命
 
-����ϵͳ��չ����ƿ����Rust������
-Rust��WASI��WebAssembly System Interfance���ƹ���ռ�������
-����Rustʵ�ֵ�������
+操作系统发展遭遇瓶颈，Rust来拯救
+Rust是WASI（WebAssembly System Interfance）推广和普及的推手
+基于Rust实现的新语言
 
-### rust���Եİ汾��˵��
+### rust语言的版本号说明
 
-- ���廯�汾
-  - ���ʽΪ�����汾��.�ΰ汾��.�޶���
-  - ����汾�ŵ�������
-    - ���汾�ţ������˲����ݵ�API�޸�
-    - �ΰ汾�ţ����������¼��ݵĹ���������
-    - �޶��ţ����������¼��ݵ���������
+- 语义化版本
+  - 其格式为：主版本号.次版本号.修订号
+  - 语义版本号递增规则。
+    - 主版本号：当做了不兼容的API修改
+    - 次版本号：当做了向下兼容的功能性新增
+    - 修订号：当作了向下兼容的问题修正
 
-- ���а汾
+- 发行版本
   - master -> nightly
   - beta -> Beta
   - stable -> Stable
 
-- Editor�汾
-  - 2015 1.0 - 1.30 Ŀ���Ǹ����ȶ�
-  - 2018 1.31 - ����������
+- Editor版本
+  - 2015 1.0 - 1.30 目标是更加稳定
+  - 2018 1.31 - 走向生产级
   - 2021
 
-## �﷨
+## 语法
 
-### �ʷ��ṹ
+### 词法结构
 
-- �������󲿷�
-  - �ؼ���
-    - �ϸ�ؼ���:as/break/const/continue/crate/if/else/struct/enum/true/false/fn/for/in/let/loop/impl/mod/match/move/mut/pub/ref/return/self/Self/static/super/trait/type/unsafe/use/where/while/async/await/dyn/main
-    - ������ ����������һ����ʹ�ã�abstract/become/box/do/final/macro/override/priv/typeof/unsized/virtual/yield/try
-    - ���ؼ���
-  - ��ʶ��
-  - ע��
-  - �հ�
-  - ����
-  - ·��
+- 包含六大部分
+  - 关键字
+    - 严格关键字:as/break/const/continue/crate/if/else/struct/enum/true/false/fn/for/in/let/loop/impl/mod/match/move/mut/pub/ref/return/self/Self/static/super/trait/type/unsafe/use/where/while/async/await/dyn/main
+    - 保留字 不代表将来一定会使用：abstract/become/box/do/final/macro/override/priv/typeof/unsized/virtual/yield/try
+    - 弱关键字
+  - 标识符
+  - 注释
+  - 空白
+  - 词条
+  - 路径
 
-### ����ʽ
+### 表达式
 
-- ����ʽ�����
-  - ����������ͣ�
-    - �������
-    - ���̿������
-    - ����ʽ���
-    - �����
+- 表达式和语句
+  - 语句四种类型：
+    - 声明语句
+    - 流程控制语句
+    - 表达式语句
+    - 宏语句
 
-- Rust�﷨�ĹǼ�
-  - �����ؼ�Ԫ��
-    - ���ԣ�������#![...]
-    - �ֺ�[;],�зָ��
-    - ������[{...}], ��ָ��
+- Rust语法的骨架
+  - 三个关键元素
+    - 属性，类似于#![...]
+    - 分号[;],行分割符
+    - 花括号[{...}], 块分割符
     - 
-- Rust���������ʽ������
-  - �ֺű���ʽ�����Բ�����Ԫ���� (Unit Type) ;->()������ֵ����������������һ��Բ������ɵ�ֵ��ֻ���ڿ�����һ�вŻ���ֵ
-  - �����ʽ����������ɣ�����ֵ�ǿ������һ������ʽ��ֵ
-  - ��ֵ����1.�ֺű���ʽ����ֵ����ԶΪ�����ĵ�Ԫ����[()],2.�ֺű���ʽֻ���ڿ����ʽ�����һ�вŻ���ֵ������ʱ��ֻ��Ϊ���ӷ����ڣ�3.�����ʽֻ�������һ�б���ʽ������ֵ
+- Rust，面向表达式的语言
+  - 分号表达式：可以产生单元类型 (Unit Type) ;->()，他的值就是他自身，就是一对圆括号组成的值，只有在块的最后一行才会求值
+  - 块表达式：花括号组成，返回值是块中最后一个表达式的值
+  - 求值规则：1.分号表达式返回值是永远为自身的单元类型[()],2.分号表达式只有在块表达式的最后一行才会求值，其他时候只作为连接符存在，3.块表达式只对其最后一行表达式进行求值
