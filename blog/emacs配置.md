@@ -1,5 +1,16 @@
 # Emacs
 
+### 快捷键
+
+Emacs 功能键 | 缩写 | 对应键盘按键(PC/Mac)
+--- | --- | ---
+Control | C | Ctrl / Control
+Meta|M|Alt / Option
+Shift | S | Shift / Shift
+Super | s| Win / Command
+Hyper | H | 无
+
+
 ## Linux Mac
 
 安装完emacs后

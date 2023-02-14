@@ -1,0 +1,1 @@
+过滤输出：head -n 1000000 | sort | uniq -c

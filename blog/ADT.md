@@ -57,6 +57,34 @@ S[0,n=0),也是任何串的子串，前缀，后缀
 ## 模式匹配
 
 ### 蛮力匹配
+版本一：
+```c++
+int match( char *P, char *T) {
+	size_t n = strlen(T), i = 0;
+	size_t m = strlen(P), j = 0;
+	while (j < m && i < n) //自左向右逐个对比字符
+	   if (T[i] == P[j]){ i++; j++;}//若匹配，则转到下一对字符
+	   else {i -= j - 1; j = 0}//否则， T回退，P复位
+	return i - j;
+}
+```
+
+版本二：
+```c++
+int match( char *P, char *T) {
+	size_t n = strlen(T), i = 0;  //T[i]与P[0]对齐
+	size_t m = strlen(P), j = 0;  //T[i + j]与P[j]对齐
+	for (i = 0; i < n - m + 1; i++){  //T从第i个字符起，与
+		for (j = 0; j < m; j++)    //P对应的字符逐个比对
+				if (T[i + j] != P[j]) break;  //若失配，P整体右移一个字符重新比对
+		if (m <= j ) break;  //找到匹配字串
+	}
+}
+```
 
 ### KMP算法
+记忆法：
+```c++
 
+```
+查询表：
